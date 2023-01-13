@@ -39,7 +39,8 @@ $videotheque = array(
 
 echo '12.Mes films : <br>';
 //ajoutez votre code ici
-
+foreach ($videotheque as $film){
+    echo $film['nom'] . ', ' . $film['date'] . ', ' . $film['realisateur'] . ', ' . implode(', ', $film['acteurs']) . '<br>';
 
 //----------------------------------------
 //Afficher toutes les informations de la vidéothèque
@@ -47,6 +48,34 @@ echo '12.Mes films : <br>';
 //informations (nom, date, realisateur, acteurs) et en plus de ces informations
 //rajoutez un synopsis
 
-echo '13.Mes films : <br>';
-//ajoutez votre code ici
+    echo '13.Mes films : <br>';
 
+    $videotheque = array(
+        array(
+            'nom' => 'Inception',
+            'date' => 2010,
+            'realisateur' => 'Christopher Nolan',
+            'acteurs' => array(
+                'Leonardo DiCaprio', 'Ken Watanabe', 'Joseph Gordon-Levitt',
+            ),
+            'synopsis' => 'jsp.',
+        ),
+        array(
+            'nom' => 'Inception',
+            'date' => 2010,
+            'realisateur' => 'Christopher Nolan',
+            'acteurs' => array(
+                'Leonardo DiCaprio', 'Ken Watanabe', 'Joseph Gordon-Levitt',
+            ),
+            'synopsis' => 'jsp.',
+        ),
+        array(
+            'nom' => 'Inception',
+            'date' => 2010,
+            'realisateur' => 'Christopher Nolan',
+            'acteurs' => array(
+                'Leonardo DiCaprio', 'Ken Watanabe', 'Joseph Gordon-Levitt',
+            ),
+            'synopsis' => 'jsp.',
+        ),
+    );
