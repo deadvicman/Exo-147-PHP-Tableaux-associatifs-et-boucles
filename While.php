@@ -28,9 +28,19 @@ echo "Je dors enfin...<br><br>";
 
 
 /**
- * Utililisez les deux exemples en haut pour compter 25 vaches.
+ * Utilisez les deux exemples en haut pour compter 25 vaches.
  */
 
 
 // TODO Votre code ici !
-
+$nombreVache = 1;
+$dormir = false;
+echo "3.Je vais compter les vaches pour dormir : <br>";
+while ($dormir === false) {
+    echo $nombreVache . " vache(s) <br>";
+    $nombreVache++;
+    if ($nombreMouton >= 25) {
+        $dormir = true;
+    }
+}
+echo "Je dors enfin...<br><br>";
